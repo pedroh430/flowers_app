@@ -2,14 +2,10 @@ import { useRouter } from "expo-router";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 
-
 export default function StartScreen() {
   const router = useRouter();
 
-  const goToHome = () => {
-    router.push("/iniciar");
-  };
-
+  
 
   return (
     <View style={styles.container}>
@@ -21,7 +17,7 @@ export default function StartScreen() {
 
       <Text style={styles.title}>Bem-vindo ao App!</Text>
      
-      <TouchableOpacity style={styles.button} onPress={goToHome}>
+      <TouchableOpacity style={styles.button} onPress={() => router.replace ("/tabs")}>
         <Text style={styles.buttonText}>Iniciar</Text>
       </TouchableOpacity>
        <Text style={styles.subtitle}>“Organize, personalize e monte cestas com facilidade.”</Text>
