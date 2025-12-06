@@ -7,9 +7,9 @@ export default function HomeScreen() {
   return (
     
     <ScrollView style={{ padding: 20, backgroundColor: "#ffffffff"}}>
-      <View style={style.conteine}>
-        {products.map((item) => (
-        <ProductCard key={item.id} item={item}/>
+      <View style={styles.conteine}>
+        {products.map(Product => (
+        <ProductCard key={Product.id} Product={Product}/>
        ))}
       </View>
     </ScrollView>
@@ -18,7 +18,7 @@ export default function HomeScreen() {
 }
 
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
 
   conteine: {
   flexDirection: "row",

@@ -13,19 +13,19 @@ export const products: Product[] = [
     price:44.55,
     image: require("../assets/images/Logo.png")
   },
-  {id:2,
+  {id:3,
     name:"cesta",
     price:44.55,
     image: require("../assets/images/Logo.png")
   },
   {
-    id:2,
+    id:4,
     name:"cesta",
     price:44.55,
     image: require("../assets/images/Logo.png")
   },
   {
-    id:2,
+    id:5,
     name:"cesta",
     price:44.55,
     image: require("../assets/images/Logo.png")
