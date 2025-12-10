@@ -1,15 +1,22 @@
 import ProductCard from "@/components/ProductCard";
-import { products } from "@/data/products";
+import { useProductContext } from "@/context/ProductContext";
 import { ScrollView, StyleSheet, View } from "react-native";
 
 
+
 export default function HomeScreen() {
+   
+  const {products} = useProductContext();
+
   return (
+
+  
+
     
     <ScrollView style={{ padding: 20, backgroundColor: "#ffffffff"}}>
       <View style={styles.conteine}>
-        {products.map(Product => (
-        <ProductCard key={Product.id} Product={Product}/>
+        {products.map(item => (
+        <ProductCard key={item.id} item={item}/>
        ))}
       </View>
     </ScrollView>

@@ -1,13 +1,16 @@
-import { Product } from "@/types/Product";
 import { Image, StyleSheet, Text, View } from "react-native";
 
 
-export default function ProductCard({Product}: {Product: Product}) {
+
+export default function ProductCard({item}) {
+
+
+
   return (
     <View style={styles.card}>
-      <Image source={Product.image} style={styles.img} />
-      <Text style={styles.name}>{Product.name}</Text>
-      <Text style={styles.price}>R$ {Product.price.toFixed(2)}</Text>
+      <Image source={{uri: item.image}} style={styles.img}/>
+      <Text style={styles.name}>{item.name}</Text>
+      <Text style={styles.price}>R$ {item.price.toFixed(2)}</Text>
     </View>
   );
 }
