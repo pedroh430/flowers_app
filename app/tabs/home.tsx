@@ -1,12 +1,10 @@
 import ProductCard from "@/components/ProductCard";
-import { useProductContext } from "@/context/ProductContext";
 import { ScrollView, StyleSheet, View } from "react-native";
-
 
 
 export default function HomeScreen() {
    
-  const {products} = useProductContext();
+
 
   return (
 
