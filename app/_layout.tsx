@@ -13,6 +13,7 @@ export default function TabsLayout() {
     
       <Stack.Screen name ="(tabs)" options={{headerShown: false}}/>
     </Stack>
+   
     
    
   )

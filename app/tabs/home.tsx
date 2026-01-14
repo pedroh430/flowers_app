@@ -13,7 +13,8 @@ export default function HomeScreen() {
     <ScrollView style={{ padding: 20, backgroundColor: "#ffffffff"}}>
       <View style={styles.conteine}>
 
-        <button>ola</button>
+        
+
         
        
       </View>
